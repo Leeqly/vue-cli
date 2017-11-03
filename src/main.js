@@ -9,9 +9,9 @@ Vue.config.debug = true;
 Vue.use(VueRouter);
 Vue.use(VueResource);
  
-// 定义组件, 也可以像教程之前教的方法从别的文件引入
-const First = { template: '<div><h2>我是第 1 个子页面</h2></div>' }
-import secondcomponent from './component/secondcomponent.vue'
+// 定义组件
+import firstPage from './component/firstPage.vue'
+import secondPage from './component/secondPage.vue'
  
 // 创建一个路由器实例
 // 并且配置路由规则
@@ -19,8 +19,8 @@ const router = new VueRouter({
 	mode: 'history',
 	base: __dirname,
 	routes: [
-	    { path: '/first', component: First },
-	    { path: '/second', component: secondcomponent }
+	    { path: '/first', component: firstPage },
+	    { path: '/second', component: secondPage }
 	]
 })
  

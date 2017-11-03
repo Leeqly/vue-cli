@@ -16,7 +16,9 @@
 
 <script>
 import firstcomponent from './component/firstcomponent.vue'
-import secondcomponent from './component/secondcomponent.vue'
+import firstPage from './component/firstPage.vue'
+import secondPage from './component/secondPage.vue'
+
 export default {
 	name: 'app',
 	data () {
@@ -24,7 +26,7 @@ export default {
 			msg: 'Welcome to Your Vue.js App'
 	    }
 	},
-	components: { firstcomponent, secondcomponent }
+	components: { firstcomponent, firstPage, secondPage }
 }
 </script>
 
